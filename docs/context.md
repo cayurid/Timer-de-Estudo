@@ -1,54 +1,82 @@
 # Introdução
 
-Imagine que você deseja apresentar este projeto para investidores que deverão decidir se investem ou não no desenvolvimento da sua ferramenta.
+Nos últimos anos, o mercado de educação e produtividade pessoal tem experimentado um crescimento exponencial, impulsionado pela digitalização do ensino e pelo aumento do trabalho remoto. De acordo com dados da HolonIQ, o mercado global de tecnologia educacional (EdTech) deve atingir US$ 404 bilhões até 2025, com uma taxa de crescimento anual composta de 16,3%. Dentro desse cenário, ferramentas que auxiliam na gestão do tempo e na organização dos estudos ganham destaque, especialmente entre estudantes universitários, concurseiros e profissionais que buscam aprendizado contínuo.
 
-A **Introdução** consiste das etapas: *Contextualização -- Definição do problema -- Definição dos Objetivos -- Justificativa*, e tem como função situar o seu trabalho dentro de um contexto de mercado e mostrar a importância da sua proposta para resolver a dor de um usuário.
+Paralelamente, o conceito de "productivity apps" tornou-se um segmento robusto: aplicativos como Todoist, Trello e Forest acumulam milhões de usuários que buscam otimizar sua rotina. No entanto, muitas dessas soluções são genéricas ou focadas apenas em listas de tarefas, deixando uma lacuna para ferramentas especializadas em rastreamento de sessões de estudo com métricas detalhadas e gamificação. É nesse contexto que surge a oportunidade de criar um timer de estudos inteligente, que não apenas cronometra o tempo, mas também oferece insights sobre o desempenho do usuário, adaptando-se às necessidades de diferentes perfis.
 
-A Contextualização deve situar sem projeto em um determinado contexto de mercado, a fim de fornecer informações adicionais que possam ajudar a entender melhor o assunto que você irá abordar. Serve também para definir a relevância do seu assunto, uma vez que mostra o tamanho do mercado em que se está inserido. Ela pode envolver a análise de vários aspectos, como o ambiente histórico, cultural, político e social em que o problema a ser atacado surgiu.
-
-Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
+Além disso, a tendência de "learning analytics" – uso de dados para melhorar a aprendizagem – está ganhando força em instituições de ensino e entre autodidatas. Um estudo da Educause aponta que 70% dos alunos acreditam que ferramentas de análise de aprendizado os ajudariam a atingir melhores resultados. Portanto, um timer integrado a um banco de dados pessoal, com capacidade de gerar relatórios de progresso, atende a essa demanda crescente por autorregulação e evidências de evolução.
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, **não** é a hora de comentar sobre a solução/aplicação.
+Estudantes e profissionais que buscam aprender de forma autônoma enfrentam dificuldades em manter a disciplina e medir seu progresso real. O método tradicional de "cronometrar o tempo" com um relógio comum ou aplicativos simples não oferece insights sobre a qualidade do estudo, nem permite visualizar a evolução ao longo de semanas ou meses. Além disso, muitos usuários se sentem desmotivados por não conseguirem visualizar claramente o quanto já avançaram, o que leva ao abandono dos estudos ou à procrastinação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+Outro agravante é a falta de personalização: cada pessoa tem seu ritmo, suas matérias prioritárias e seus horários mais produtivos. Ferramentas genéricas não capturam essas nuances, nem oferecem adaptações baseadas no comportamento do usuário. Por fim, em ambientes de estudo em grupo ou em instituições de ensino, professores e tutores não têm acesso a dados objetivos sobre a dedicação dos alunos, dificultando o acompanhamento e a oferta de suporte personalizado.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+O problema, portanto, é a ausência de uma solução integrada que combine um timer funcional com um sistema de registro e análise de dados, capaz de empoderar o usuário a compreender seu próprio processo de aprendizado e, consequentemente, melhorar sua eficiência.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Objetivo Geral:
+Desenvolver uma aplicação web de timer de estudos que permita aos usuários registrar suas sessões de estudo, visualizar estatísticas de progresso e gerenciar seu tempo de forma eficiente, com diferentes níveis de acesso (usuário comum e administrador) para possibilitar escalabilidade e futuras integrações com instituições de ensino.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+Objetivos Específicos:
+
+Implementar um sistema de autenticação seguro baseado em tokens JWT, com papéis de usuário e administrador, garantindo que cada usuário tenha acesso apenas aos seus próprios dados e que administradores possam gerenciar o sistema.
+
+Criar uma interface amigável e responsiva com timer interativo (iniciar, pausar, finalizar) e formulários para inserção de metadados (matéria, descrição), utilizando HTML, CSS e JavaScript puro no front-end.
+
+Desenvolver uma API RESTful em C# (ASP.NET Core) que forneça endpoints para cadastro, login, CRUD de sessões de estudo e geração de relatórios agregados (horas totais por dia/semana/mês).
+
+Estruturar um banco de dados MySQL que armazene usuários e sessões de estudo de forma normalizada, permitindo consultas eficientes para exibição de gráficos e estatísticas no front-end.
+
+Projetar um painel administrativo com funcionalidades de gestão de usuários (listar, bloquear, visualizar estatísticas gerais) e, futuramente, geração de relatórios para acompanhamento de grupos.
  
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A relevância deste projeto está ancorada em três pilares: a necessidade comprovada de ferramentas de produtividade no segmento educacional, o potencial de monetização via planos premium ou institucionais, e a oportunidade de aprendizado técnico para o desenvolvedor.
 
-Lembre-se de pesquisar e utilizar números que justifiquem por que é importante que tal problema seja resolvido ou que mostrem o impacto do problema na vida das pessoas.
+De acordo com uma pesquisa da plataforma de cursos online Coursera, 87% dos alunos relatam que a falta de tempo e organização é o principal obstáculo para concluir cursos. Um timer de estudos com funcionalidades analíticas pode atacar diretamente esse ponto, fornecendo dados que ajudam o usuário a identificar padrões e ajustar sua rotina. Além disso, o mercado de aplicativos de foco e produtividade já demonstra viabilidade econômica: o Forest, por exemplo, ultrapassou 4 milhões de downloads e gera receita com versão paga e compras no aplicativo.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Do ponto de vista social, promover a educação autônoma e o aprendizado contínuo é uma forma de contribuir para a qualificação profissional em um mundo em constante mudança. A ferramenta pode ser adotada por escolas e universidades como complemento às atividades pedagógicas, auxiliando na formação de hábitos de estudo saudáveis.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Por fim, a escolha das tecnologias (HTML, CSS, JS no front-end; C# com ASP.NET Core no back-end; MySQL como banco de dados) reflete uma stack moderna, escalável e amplamente utilizada no mercado, o que garante que o projeto não apenas atenda aos requisitos funcionais, mas também sirva como um portfólio técnico de alto valor para o desenvolvedor.
+
+
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+O público-alvo da aplicação é composto por dois perfis principais: o usuário comum (estudante) e o administrador (que pode ser um professor, coordenador ou gestor de grupos de estudo).
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+Perfil do usuário comum (estudante):
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Idade: entre 16 e 40 anos.
+
+Escolaridade: desde ensino médio até pós-graduação.
+
+Relação com tecnologia: utiliza diariamente dispositivos como smartphone e computador, está familiarizado com aplicativos web.
+
+Objetivos: deseja organizar melhor seu tempo de estudo, acompanhar seu progresso em diferentes disciplinas e manter a motivação por meio de métricas visuais.
+
+Dores: procrastinação, falta de visibilidade do esforço real, dificuldade em manter consistência.
+
+Perfil do administrador (educador/gestor):
+
+Idade: entre 25 e 60 anos.
+
+Profissão: professor, tutor, coordenador pedagógico, orientador de estudos.
+
+Relação com tecnologia: utiliza ferramentas digitais para planejamento de aulas e comunicação com alunos, mas pode não ter conhecimentos técnicos avançados.
+
+Objetivos: acompanhar a dedicação dos alunos, identificar aqueles que precisam de suporte adicional, gerar relatórios para reuniões pedagógicas.
+
+Dores: falta de dados objetivos sobre o engajamento dos alunos, dificuldade em personalizar orientações sem métricas claras.
+
+Personas (exemplos ilustrativos):
+
+Ana, 22 anos, estudante de medicina. Estuda em média 8 horas por dia, mas sente que não evolui nas disciplinas. Quer visualizar quanto tempo dedica a cada matéria e comparar seu desempenho ao longo do semestre.
+
+Carlos, 35 anos, concurseiro. Trabalha durante o dia e estuda à noite. Precisa de um timer que registre automaticamente suas sessões e mostre se está cumprindo a meta semanal de 20 horas.
+
+Professora Mariana, 42 anos, leciona em um cursinho pré-vestibular. Gostaria de recomendar aos alunos uma ferramenta que os ajude a manter a disciplina e que lhe permita, como administradora, visualizar estatísticas agregadas da turma para ajustar o plano de ensino.
+

@@ -1,44 +1,67 @@
+Claro! Aqui está o conteúdo completo da seção **Especificações do Projeto** formatado em Markdown para você copiar e colar diretamente no seu arquivo:
+
+---
+
 # Especificações do Projeto
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto.
-
-Caso deseje atribuir uma imagem a sua persona, utilize o site https://thispersondoesnotexist.com/
+Esta seção apresenta a definição do problema e a ideia de solução a partir da perspectiva do usuário. Serão detalhadas as personas, histórias de usuários, requisitos funcionais e não funcionais, além das restrições do projeto. Para a construção das personas, foram utilizadas técnicas de observação e análise do perfil de estudantes e profissionais que buscam ferramentas de produtividade e organização dos estudos. As histórias de usuário foram derivadas das necessidades identificadas nessas personas, e os requisitos foram definidos com base na viabilidade técnica e no valor entregue ao usuário.
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+### Persona 1: Ana Carolina - "A Universitária Focada"
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+| **Informação** | **Detalhe** |
+|----------------|-------------|
+| **Idade** | 22 anos |
+| **Ocupação** | Estudante de Medicina (5º ano) |
+| **Objetivos** | Passar na residência médica em cardiologia; organizar melhor as 8+ horas diárias de estudo; identificar quais matérias estão consumindo mais tempo |
+| **Dificuldades** | Sensação de que estuda muito mas não vê progresso; dificuldade em equilibrar estudo e vida social; procrastinação em matérias difíceis |
+| **Frustrações** | Aplicativos de timer existentes são muito simples e não mostram estatísticas; não consegue visualizar quanto tempo dedicou a cada disciplina no mês |
+| **Hobbies** | Academia, séries médicas, viajar |
+| **Tecnologia** | Usa iPhone, MacBook e iPad diariamente; está sempre conectada |
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+---
+
+### Persona 2: Carlos Eduardo - "O Concurseiro Disciplinado"
+
+| **Informação** | **Detalhe** |
+|----------------|-------------|
+| **Idade** | 35 anos |
+| **Ocupação** | Analista administrativo (estuda para concursos públicos à noite) |
+| **Objetivos** | Atingir 20 horas líquidas de estudo por semana; passar no concurso de auditor fiscal; manter consistência mesmo após um dia cansativo de trabalho |
+| **Dificuldades** | Cansaço após o expediente; falta de métricas claras para saber se está evoluindo; interrupções frequentes durante o estudo em casa |
+| **Frustrações** | Não consegue mensurar se as 20 horas "brutas" viram realmente aprendizado; sente falta de um relatório semanal para ajustar a rotina |
+| **Hobbies** | Corrida de rua, futebol aos sábados, filmes de ação |
+| **Tecnologia** | Usa Android e PC Windows; prefere ferramentas simples e diretas |
+
+---
+
+### Persona 3: Professora Mariana - "A Educadora que Acompanha"
+
+| **Informação** | **Detalhe** |
+|----------------|-------------|
+| **Idade** | 42 anos |
+| **Ocupação** | Professora de cursinho pré-vestibular (Matemática) |
+| **Objetivos** | Recomendar uma ferramenta para que seus alunos mantenham disciplina; acompanhar, de forma agregada, o engajamento da turma; identificar alunos que podem estar com dificuldades |
+| **Dificuldades** | Não tem como saber, objetivamente, quais alunos estão realmente se dedicando fora da sala de aula; feedback sobre o estudo em casa é sempre subjetivo |
+| **Frustrações** | Alunos dizem que estudaram, mas os resultados não aparecem; falta de dados para orientar intervenções pedagógicas |
+| **Hobbies** | Leitura, jardinagem, séries de época |
+| **Tecnologia** | Usa notebook e smartphone intermediário; tem familiaridade com Google Sala de Aula e ferramentas educacionais |
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas, foram identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+| EU COMO... | QUERO/PRECISO ... | PARA ... |
+|------------|-------------------|----------|
+| **Ana Carolina (estudante de medicina)** | Registrar minhas sessões de estudo com cronômetro e classificar por matéria | Visualizar quanto tempo dedico a cada disciplina e ajustar meu planejamento |
+| **Ana Carolina (estudante de medicina)** | Ver gráficos de evolução do meu tempo de estudo por dia, semana e mês | Manter a motivação e identificar padrões de produtividade |
+| **Carlos Eduardo (concurseiro)** | Iniciar, pausar e finalizar o timer facilmente, mesmo após um dia cansativo | Não perder o registro de nenhuma sessão de estudo |
+| **Carlos Eduardo (concurseiro)** | Receber um resumo semanal por e-mail (ou na própria plataforma) com as horas totais estudadas | Acompanhar se estou cumprindo minha meta de 20 horas/semana |
+| **Professora Mariana (educadora)** | Acessar um painel administrativo com estatísticas agregadas dos meus alunos (com consentimento) | Identificar quais alunos precisam de mais suporte e orientar melhor minha turma |
+| **Professora Mariana (educadora)** | Visualizar quais matérias têm sido mais estudadas pela turma | Ajustar o plano de aulas para reforçar conteúdos menos praticados |
+| **Usuário administrador** | Gerenciar contas de usuários (bloquear, redefinir senhas, visualizar logs) | Manter a integridade e segurança do sistema |
+| **Usuário comum (qualquer persona)** | Fazer login de forma segura e acessar apenas meus próprios dados | Garantir minha privacidade e a confidencialidade das minhas informações |
 
 ## Requisitos
 
@@ -46,46 +69,40 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade | 
-|------|-----------------------------------------|----| 
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | ALTA |  
-|RF-002| A aplicação deve permitir a emissão de um relatório de tarefas realizadas no mês   | MÉDIA | 
+| ID     | Descrição do Requisito | Prioridade |
+|--------|------------------------|------------|
+| RF-001 | A aplicação deve permitir que o usuário se registre fornecendo nome, e-mail e senha. | ALTA |
+| RF-002 | A aplicação deve permitir que o usuário faça login com e-mail e senha, recebendo um token JWT. | ALTA |
+| RF-003 | A aplicação deve exibir um timer interativo (iniciar, pausar, reiniciar, finalizar). | ALTA |
+| RF-004 | O sistema deve permitir que o usuário visualize a lista das suas sessões de estudo anteriores. | ALTA |
+| RF-005 | A aplicação deve exibir estatísticas de progresso (total de horas no dia, semana e mês). | MÉDIA |
+| RF-006 | O usuário deve poder adicionar uma matéria ou descrição à sessão de estudo antes de finalizá-la. | MÉDIA |
+| RF-007 | O sistema deve permitir que administradores acessem um painel com lista de usuários e estatísticas gerais. | BAIXA |
+| RF-008 | A aplicação deve validar se o usuário está autenticado antes de permitir o acesso às páginas protegidas. | ALTA |
 
+### Requisitos Não Funcionais
 
-### Requisitos não Funcionais
-
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+| ID      | Descrição do Requisito | Prioridade |
+|---------|------------------------|------------|
+| RNF-001 | O sistema deve utilizar HTTPS em todas as comunicações. | ALTA |
+| RNF-002 | As senhas devem ser armazenadas com hash (bcrypt/PBKDF2). | ALTA |
+| RNF-003 | O back-end deve ser desenvolvido em C# com ASP.NET Core (RESTful). | ALTA |
+| RNF-004 | O front-end deve ser responsivo (desktop, tablet, smartphone). | MÉDIA |
+| RNF-005 | O tempo de resposta das APIs não deve ultrapassar 500 ms. | MÉDIA |
+| RNF-006 | O código deve ser versionado com Git (commits semânticos). | MÉDIA |
+| RNF-007 | O sistema deve tratar erros e exibir mensagens amigáveis ao usuário. | MÉDIA |
+| RNF-008 | O banco de dados MySQL deve ser normalizado até a 3FN. | ALTA |
 
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+| ID | Restrição |
+|----|------------|
+| 01 | O projeto deverá ser desenvolvido individualmente, sem equipe de apoio. |
+| 02 | O prazo para entrega da primeira versão funcional é de 60 dias. |
+| 03 | A aplicação deverá ser hospedada em um serviço gratuito ou de baixo custo (ex: Azure Free Tier, Heroku, ou servidor local para demonstração). |
+| 04 | Não será implementado um módulo de recuperação de senha por e-mail na primeira versão (será feito manualmente pelo admin). |
+| 05 | O sistema deverá funcionar nos navegadores mais recentes (Chrome, Firefox, Edge, Safari). |
+| 06 | As APIs devem ser documentadas com Swagger para facilitar testes e futuras integrações. |
 
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
